@@ -3,11 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfólio de [Seu Nome]</title>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Meu Portfólio</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Estilos CSS -->
     <style>
+        /* Estilos simples para o portfólio */
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f4;
-   
+        }
+        header {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+        }
+        section {
+            padding: 2em;
+            margin: 1em;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            color: #333;
+        }
+        .projects {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1em;
+        }
+        .project {
+            width: calc(33% - 1em);
+            background-color: #f9f9f9;
+            padding: 1em;
+            border-radius: 8px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1em 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+        @media (max-width: 768px) {
+            .project {
+                width: calc(50% - 1em);
+            }
+        }
+        @media (max-width: 480px) {
+            .project {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabeçalho -->
+    <header>
+        <h1>Bem-vindo ao meu portfólio!</h1>
+        <p>Sou um desenvolvedor web apaixonado por criar soluções inovadoras.</p>
+    </header>
+
+    <!-- Seção sobre mim -->
+    <section id="sobre">
+        <h2>Sobre Mim</h2>
+        <p>Olá! Eu sou [Seu Nome], um desenvolvedor web com experiência em HTML, CSS, JavaScript e outras tecnologias modernas. Adoro aprender e desenvolver novos projetos que impactem positivamente o mundo digital.</p>
+    </section>
+
+    <!-- Seção de habilidades -->
+    <section id="habilidades">
+        <h2>Minhas Habilidades</h2>
+        <ul>
+            <li>HTML, CSS, JavaScript</li>
+            <li>React, Node.js</li>
+            <li>Desenvolvimento Responsivo</li>
+            <li>Controle de versão com Git</li>
+            <li>UI/UX Design</li>
+        </ul>
+    </section>
+
+    <!-- Seção de projetos -->
+    <section id="projetos">
+        <h2>Meus Projetos</h2>
+        <div class="projects">
+            <div class="project">
+                <h3>Projeto 1</h3>
+                <p>Descrição do projeto. Tecnologias utilizadas: HTML, CSS, JavaScript.</p>
+            </div>
+            <div class="project">
+                <h3>Projeto 2</h3>
+                <p>Descrição do projeto. Tecnologias utilizadas: React, Node.js.</p>
+            </div>
+            <div class="project">
+                <h3>Projeto 3</h3>
+                <p>Descrição do projeto. Tecnologias utilizadas: HTML, CSS, JavaScript.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seção de contato -->
+    <section id="contato">
+        <h2>Contato</h2>
+        <p>Você pode entrar em contato comigo pelo e-mail: <a href="mailto:email@dominio.com">email@dominio.com</a></p>
+    </section>
+
+    <!-- Rodapé -->
+    <footer>
+        <p>&copy; 2025 Meu Portfólio. Todos os direitos reservados.</p>
+    </footer>
+
+</body>
+</html>
